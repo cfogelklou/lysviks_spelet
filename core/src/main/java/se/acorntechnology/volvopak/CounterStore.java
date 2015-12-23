@@ -1,13 +1,29 @@
 package se.acorntechnology.volvopak;
 
-public class CounterStore {
-    private int count;
+import java.util.Random;
 
-    public void add(int num) {
-        count += num;
+public class CounterStore {
+
+    private Random mRand = new Random();
+
+    private final String[] STRINGS = {
+            "Gora en regel",
+            "Tumme master",
+            "Charader!",
+            "Sjung",
+            "Rimma",
+            "Regel",
+            "Saga",
+            "Amne",
+    };
+
+    public CounterStore() {
+        mRand.setSeed(System.nanoTime());
     }
 
-    public int get() {
-        return count;
+    public String get() {
+
+        int  n = mRand.nextInt(STRINGS.length);
+        return STRINGS[n];
     }
 }
