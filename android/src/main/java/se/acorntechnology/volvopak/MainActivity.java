@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        final TextView counterTextView = (TextView) findViewById(R.id.counterTextView);
+        final TextView counterTextView = (TextView) findViewById(R.id.whatToDo);
         final Button counterButton = (Button) findViewById(R.id.counterButton);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
