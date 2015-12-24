@@ -7,14 +7,14 @@ public class CounterStore {
     private Random mRand = new Random();
 
     private final String[] STRINGS = {
-            "Gora en regel",
-            "Tumme master",
+            "Göra en regel",
+            "Tumme mäster",
             "Charader!",
             "Sjung",
             "Rimma",
             "Regel",
             "Saga",
-            "Amne",
+            "Ämne",
     };
 
     public CounterStore() {
@@ -25,5 +25,29 @@ public class CounterStore {
 
         int  n = mRand.nextInt(STRINGS.length);
         return STRINGS[n];
+    }
+
+    private final String[] CHARADES = {
+            "Spela fotboll",
+            "Basket",
+            "Hockey",
+            "giraff",
+                    "lejon",
+                    "katt",
+                    "elefant",
+                    "ko",
+                    "mus",
+                    "gorilla",
+                    "häst",
+                    "kanin",
+                    "apa",
+                    "hund",
+                    "fisk",
+            "ambulance"
+    };
+
+    public String getCharade() {
+        int  n = mRand.nextInt(CHARADES.length);
+        return CHARADES[n];
     }
 }

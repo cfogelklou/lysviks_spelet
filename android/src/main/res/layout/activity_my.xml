@@ -4,20 +4,11 @@
     android:layout_height="match_parent"
     tools:context=".MyActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tryck på mig"
-        android:id="@+id/counterButton"
-        android:layout_alignParentBottom="false"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Lysvik Spelet"
+        android:text="Lysvik Leken"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -32,13 +23,32 @@
         android:layout_marginBottom="53dp"
         android:text="!!!" />
 
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ger mig en uppdrag"
+        android:id="@+id/counterButton"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visa mig charaden!"
+        android:id="@+id/charadeButton"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/counterButton"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/moose"
-        android:layout_below="@+id/counterButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:alpha=".1" />
+/>
 
 </RelativeLayout>
