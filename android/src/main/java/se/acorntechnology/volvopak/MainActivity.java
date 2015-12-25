@@ -119,7 +119,60 @@ public class MainActivity extends Activity {
             "Hoppa",
             "Mygga",
             "Polis",
-            "Nypa"
+            "Nypa",
+            "Sova",
+            "Sova som Pippi",
+            "Titta på teve",
+            "Arg mamma",
+            "Åka skidor",
+            "Ramla från cyckeln",
+            "Cykla",
+            "Åka skridskor",
+            "Simma",
+            "Leka med iPad",
+            "Såga ner träd",
+            "Häst",
+            "Spela Matts' Hockey Spel",
+            "Spela video spel",
+            "Dansa runt julgran",
+            "Bebis",
+            "Groda",
+            "T-Rex",
+            "Äta en sur äpple",
+            "Tända ljus",
+            "Brandbil",
+            "Brandmän",
+            "Darth Vader",
+            "Yoda",
+            "Hulk",
+            "Boxning",
+            "Går med hunden",
+            "Duscha",
+            "Bada",
+            "Vattna blommorna",
+            "Måla",
+            "Demonstrant",
+            "Programmerar appar",
+            "Astronaut",
+            "Präst",
+            "Spela pianot",
+            "Paddla kanot",
+            "Trumpet",
+            "Fiol",
+            "Skateboard",
+            "Anka",
+            "Mata ankarna",
+            "Pirater",
+            "Grilla",
+            "Fiska",
+            "Morfar",
+            "Mormor",
+            "Kalle spelar fotboll",
+            "Hund",
+            "Flygande orm",
+            "Leopard",
+            "Flygande ekorre",
+            "Indominous Rex"
     };
 
     public String getCharade() {
@@ -158,7 +211,7 @@ public class MainActivity extends Activity {
             mThread = new Thread() {
                 @Override
                 public void run() {
-                    for (int i = 5; (mCharadeText.length() > 0) && (this == mThread) && (i > 0); i--) {
+                    for (int i = 10; (mCharadeText.length() > 0) && (this == mThread) && (i > 0); i--) {
                         final int cnt = i;
                         runOnUiThread(new Runnable() {
                             @Override
